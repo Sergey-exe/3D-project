@@ -3,17 +3,23 @@ using UnityEngine;
 
 public class InputReader : MonoBehaviour
 {
-    private const string Horizontal = nameof(Horizontal);
-    private const string Vertical = nameof(Vertical);
+    [SerializeField] private KeyCode[] _keysForce;
+    [SerializeField] private KeyCode[] _keysShoot;
+    [SerializeField] private KeyCode[] _keysReload;
 
-    public float InputMoveHorizontalAxis()
+    public bool IsDownButtonForce()
     {
-        return InputAxis(Horizontal);
+        return IsDownButton(_keysForce);
     }
 
-    public float InputMoveVerticalAxis()
+    public bool IsDownButtonShoot()
     {
-        return InputAxis(Vertical);
+        return IsDownButton(_keysShoot);
+    }
+
+    public bool IsDownButtonReload()
+    {
+        return IsDownButton(_keysReload);
     }
 
     private bool IsDownButton(KeyCode[] keyCodes)
@@ -23,10 +29,5 @@ public class InputReader : MonoBehaviour
                 return true;
 
         return false;
-    }
-
-    private float InputAxis(string axis)
-    {
-        return Input.GetAxis(axis);
     }
 }

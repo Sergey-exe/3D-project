@@ -353,10 +353,10 @@
 -analyzer:"D:/Unity/2022.3.45f1/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Unity/2022.3.45f1/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Packages/8K Skybox Pack Free/Example Scenes/Script/RotateCamera.cs"
-"Assets/_Scripts/CharacterMover.cs"
+"Assets/_Scripts/Forcer.cs"
 "Assets/_Scripts/InputReader.cs"
-"Assets/_Scripts/Mover.cs"
-"Assets/_Scripts/RigidbodyMover.cs"
+"Assets/_Scripts/Shoter.cs"
+"Assets/_Scripts/SphereSpawner.cs"
 -langversion:9.0
 /deterministic
 /optimize+
